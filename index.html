@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Project</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Online Spaceship Shop</h1>
+
+        </div>
+        <div class="items-container">
+            <div class="items" id="cube">
+
+                <h4>Borg Cube</h4>
+
+                <img src="images/cube.jpeg" alt="cube">
+                <div class="lower">
+                    <p class="price" data-price="2500" id="cube-price">Price: $2500</p>
+                    <button class="add" id="Borg Cube" value="2500">Add</button>
+
+
+                </div>
+
+
+            </div>
+            <div class="items" id="facon">
+
+                <h4>Millenium Falcon</h4>
+
+                <img src="images/falconbetter.jpeg" alt="falcon">
+                <div class="lower">
+                    <p class="price" data-price="65" id="falcon-price">Price: $65</p>
+                    <button class="add" id="Millenium Falcon" value="65">Add</button>
+
+
+                </div>
+            </div>
+            <div class="items" id="firefly">
+
+                <h4>Serenity</h4>
+
+                <img src="images/Serenityship.jpeg" alt="firefly">
+                <div class="lower">
+                    <p class="price" data-price="25" id="firefly-price">Price: $25</p>
+                    <button class="add" id="Serenity" value="25">Add</button>
+
+
+                </div>
+            </div>
+            <div class="items" id="voyager">
+
+                <h4>Starship Voyager</h4>
+
+                <img src="images/voyager.png" alt="voyager">
+                <div class="lower">
+                    <p class="price" data-price="460" id="voyager-price">Price: $460</p>
+                    <button class="add" id="Starship Voyager" value="460">Add</button>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <h3>Shopping Cart</h3>
+            <div class="cart-items">
+
+
+                <table class="ships-table">
+                    <tr>
+                        <th>Ships</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Ship Total</th>
+                        <th>Add</th>
+                        <th>Remove </th>
+                    </tr>
+
+
+
+
+
+                </table>
+
+            </div>
+
+            <div class="lower-cart">
+                <p> Grand Total: <span id="grand-total"> 0</span></p>
+                <button> Submit Order</button>
+                <button id='reset-button'> Reset Order</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="app2.js"></script>
+</body>
+
+</html>
