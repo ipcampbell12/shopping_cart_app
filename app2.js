@@ -71,7 +71,7 @@ function increaseQ(e, quantity, price, total) {
 
 }
 
-//decrement the quantity of an item in teh cart
+//decrement the quantity of an item in the cart
 function decreaseQ(e, quantity, price, total) {
     let num = parseInt(quantity.innerText)
     num -= 1
@@ -107,7 +107,7 @@ function removeItemFromCart(evt) {
     itemName = evt.target.parentElement.parentElement.cells[0].innerText
 
     //document.querySelectorAll('.add')[0].parentElement.previousElementSibling.previousElementSibling.innerText
-    if (evt.target.className = 'decrease' && quantity == 0) {
+    if (evt.target.className == 'decrease' && quantity == 0) {
         const tr = evt.target.parentElement.parentElement
         tr.remove()
         restoreEventListener(itemName)
